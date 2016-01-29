@@ -1,0 +1,47 @@
+# This is Git's per-user configuration file.
+# [user]
+# Please adapt and uncomment the following lines:
+#	name 	= First Last
+#	email 	= email@email.email
+
+[core]
+	editor  = /usr/bin/vim
+
+[alias]
+	#all
+	a 		= add
+	aa 		= add .
+
+	#branch
+	b 		= branch
+	bd 		= branch -d
+
+	#checkout
+	co 		= checkout
+	cb		= checkout -b
+
+	#diff
+	df 		= diff 
+	dfc		= diff --cached 
+
+	#commit
+	c 		= commit
+	cm 		= commit -m
+	amend	= commit --amend
+	am 		= commit --amend
+
+	#clone
+	cl 		= clone
+	#fetch
+	f 		= fetch
+	fo 		= fetch origin
+	fa		= fetch --all
+
+	#log
+	l		= log --graph --abbrev-commit --decorate --all --format=format:'%C(bold dim magenta)%h %C(reset)%C(bold blue)%aD %C(reset)%C(green)(%ar)%C(reset)%C(bold red)%d %n''%C(reset)%C(white)%s %C(reset)%C(dim yellow)<%aN>%C(reset)'
+
+	#rebase
+	rb 		= rebase
+
+[push]
+	default = simple
