@@ -2,8 +2,7 @@
 # [user]
 # Please adapt and uncomment the following lines:
 #	name 	= First Last
-#	email 	= email@email.email
-
+#	email 	= email@email.email 
 [core]
 	editor  = /usr/bin/vim
 
@@ -24,15 +23,19 @@
 	df 		= diff 
 	dfc		= diff --cached 
 
+    	#cherry-pick
+    	cp      = cherry-pick -x -s
+
+    	#clone
+    	cl      = clone
+
 	#commit
 	c 		= commit
 	cm 		= commit -m
 	amend	= commit --amend
 	am 		= commit --amend
 
-	#clone
-	cl 		= clone
-	#fetch
+    	#fetch
 	f 		= fetch
 	fo 		= fetch origin
 	fa		= fetch --all
@@ -40,8 +43,20 @@
 	#log
 	l		= log --graph --abbrev-commit --decorate --all --format=format:'%C(bold dim magenta)%h %C(reset)%C(bold blue)%aD %C(reset)%C(green)(%ar)%C(reset)%C(bold red)%d %n''%C(reset)%C(white)%s %C(reset)%C(dim yellow)<%aN>%C(reset)'
 
+    	#merge
+    	mff     = merge --ff-only
+    	mnoff   = merge --no-ff
+
+    	#push
+    	sup     = push --set-upstream origin
+
 	#rebase
 	rb 		= rebase
-
+    	rba     = rebase --abort
+    	rbc     = rebase --continue
+	
+    	#reset
+    	setto = reset --hard
+    
 [push]
 	default = simple
