@@ -4,7 +4,7 @@
 #	name 	= First Last
 #	email 	= email@email.email
 [core]
-	editor  = /usr/bin/vim
+    editor  = /usr/bin/vim
 
 [alias]
     #add
@@ -19,6 +19,8 @@
     b       = branch
     ba      = branch -a
     bd      = branch -d
+    bm      = branch --merged
+    bdm     = "!git branch --merged | egrep -v '[*]|trunk|staging|production' | xargs -n 1 git branch -d"
 
     #checkout
     co      = checkout
@@ -84,9 +86,6 @@
     #revert
     rv      = revert
 
-    #show
-    ss      = show stash
-
     #stash
     st      = stash
     sa      = stash apply
@@ -94,7 +93,7 @@
     sl      = stash list
     sp      = stash save --patch
     spop    = stash pop
+    ss      = stash show -p
 
 [push]
     default = simple
-
