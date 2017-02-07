@@ -19,6 +19,7 @@
     b       = branch
     ba      = branch -a
     bd      = branch -d
+    bdd     = branch -D
     bm      = branch --merged
     bdm     = "!git branch --merged | egrep -v '[*]|trunk|staging|production' | xargs -n 1 git branch -d"
 
@@ -79,6 +80,7 @@
     #remote
     rso     = remote show origin
     prune   = remote prune origin
+    ra      = remote add
 
     #reset
     setto   = reset --hard
@@ -94,6 +96,13 @@
     sp      = stash save --patch
     spop    = stash pop
     ss      = stash show -p
+
+    #tag
+    ta      = tag -a
+    tl      = tag --list -n99
+    tlr     = tag --list release* -n99
+    tlst    = tag --list stable* -n99
+    td      = tag --delete
 
 [push]
     default = simple
