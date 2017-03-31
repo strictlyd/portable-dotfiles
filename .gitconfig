@@ -57,8 +57,10 @@
 
     #log
     l       = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold dim magenta)%h %C(reset)%C(bold blue)%aD %C(reset)%C(green)(%ar)%C(reset)%C(bold red)%d %n''%C(reset)%C(white)%s %C(reset)%C(dim yellow)<%aN>%C(reset)'
-    ws      = log --oneline --check
+    lg      = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold dim magenta)%h %C(reset)%C(bold blue)%aD %C(reset)%C(green)(%ar)%C(reset)%C(bold red)%d %n''%C(reset)%C(white)%s %C(reset)%C(dim yellow)<%aN>%C(reset)' --grep
     lp      = log -p
+    ws      = log --oneline --check
+
 
     #merge
     mff     = merge --ff-only
