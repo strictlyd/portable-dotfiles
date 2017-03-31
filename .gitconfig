@@ -1,8 +1,8 @@
 # This is Git's per-user configuration file.
 # [user]
 # Please adapt and uncomment the following lines:
-#	name 	= First Last
-#	email 	= email@email.email
+#   name    = First Last
+#   email   = email@email.email
 [core]
     editor  = /usr/bin/vim
 
