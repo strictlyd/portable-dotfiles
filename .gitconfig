@@ -18,10 +18,12 @@
     #branch
     b       = branch
     ba      = branch -a
+    bc      = branch -vv --list --contains @
     bd      = branch -d
     bdd     = branch -D
-    bm      = branch --merged
+    bm      = branch -vv --list --merged @
     bdm     = "!git branch --merged | egrep -v '[*]|trunk|staging|production' | xargs -n 1 git branch -d"
+    bunup   = branch --unset-upstream
 
     #checkout
     co      = checkout
