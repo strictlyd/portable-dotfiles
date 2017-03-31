@@ -11,6 +11,7 @@
     a       = add
     aa      = add .
     ap      = add -p
+    au      = add -u    # stage modified and deleted files in entire tree
 
     #blame
     bl      = blame
