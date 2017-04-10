@@ -107,10 +107,16 @@
     st      = stash
     sa      = stash apply
     sd      = stash drop
+    sd0     = stash drop stash@{0}
+    sd1     = stash drop stash@{1}
+    sd2     = stash drop stash@{2}
     sl      = stash list
     sp      = stash save --patch
     spop    = stash pop
     ss      = stash show -p
+    ss0     = stash show -p stash@{0}
+    ss1     = stash show -p stash@{1}
+    ss2     = stash show -p stash@{2}
 
     #tag
     ta      = tag -a
