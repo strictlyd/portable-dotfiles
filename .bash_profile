@@ -13,7 +13,10 @@ alias glog='git log --graph --abbrev-commit --decorate --all                    
 
 #tmux aliases
 alias t='tmux'
+alias tc='tmux new -s '
+alias tn='tmux new -s '
 alias tls='tmux list-session'
 alias tas='tmux attach-session -t'
 alias tks='tmux kill-session -t'
+alias td='tmux detach'
 
