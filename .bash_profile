@@ -3,7 +3,7 @@ export PATH=/usr/local/bin:$PATH
 
 #unix aliases
 alias ls='ls -a'
-alias ll='ls -lA'
+alias ll='ls -lH'
 
 #git aliases'
 alias g='git '
