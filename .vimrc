@@ -17,6 +17,9 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
+" Remap key bindings
+:nnoremap <C-b> <C-w>
+
 " Set Monokai theme
 syntax enable
 colorscheme monokai
