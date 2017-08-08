@@ -34,6 +34,13 @@
     cb      = checkout -b
     cop     = checkout -p
 
+    #config
+    cf      = config
+    cfe     = config user.email
+    cfl     = config --list
+    cfu     = config user.name
+    cfn     = config user.name
+
     #diff
     df      = diff
     dfc     = diff --cached
