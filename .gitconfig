@@ -104,6 +104,7 @@
 
     #revert
     rv      = revert
+    rvh     = revert HEAD
 
     #show
     s       = show
