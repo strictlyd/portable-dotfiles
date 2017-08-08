@@ -98,6 +98,7 @@
     rso     = remote show origin
     prune   = remote prune origin
     ra      = remote add
+    rao     = remote add origin
 
     #reset
     setto   = reset --hard
