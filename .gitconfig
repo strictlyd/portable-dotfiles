@@ -99,6 +99,8 @@
     prune   = remote prune origin
     ra      = remote add
     rao     = remote add origin
+    rp      = remote prune
+    rpo     = remote prune origin
 
     #reset
     setto   = reset --hard
