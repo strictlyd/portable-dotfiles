@@ -113,6 +113,7 @@
     s       = show
     sh      = show HEAD
     sh1     = show HEAD^
+    sh2     = show HEAD^^
 
     #stash
     st      = stash
