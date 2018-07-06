@@ -4,7 +4,7 @@
 #   name    = First Last
 #   email   = email@email.email
 [core]
-    editor  = /usr/bin/vim
+    editor  = /usr/local/bin/vim
 
 [alias]
     #add
