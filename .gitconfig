@@ -80,7 +80,7 @@
 
     #push
     pf      = push --force
-    sup     = push --set-upstream origin
+    sup     = push --set-upstream
 
     #reset
     rh      = reset HEAD
