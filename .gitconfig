@@ -59,6 +59,7 @@
     cm      = commit -m
     amend   = commit --amend
     am      = commit --amend
+    cra     = commit --amend --reset-author
 
     #fetch
     f       = fetch
