@@ -34,6 +34,12 @@
     cb      = checkout -b
     cop     = checkout -p
 
+    #clean
+    cln     = clean -nd
+    clf     = clean -fd
+    cli     = clean -i
+    iclean  = clean -i
+
     #config
     cf      = config
     cfe     = config user.email
