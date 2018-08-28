@@ -30,6 +30,7 @@
     bunup   = branch --unset-upstream
 
     #checkout
+    ca      = checkout -- .
     co      = checkout
     cb      = checkout -b
     cop     = checkout -p
