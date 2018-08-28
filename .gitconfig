@@ -138,6 +138,11 @@
     ss1     = stash show -p stash@{1}
     ss2     = stash show -p stash@{2}
 
+    #submodule
+    subi    = submodule update --init --recursive
+    subu    = submodule update
+    subs    = submodule sync
+
     #tag
     ta      = tag -a
     tl      = tag --list -n99
