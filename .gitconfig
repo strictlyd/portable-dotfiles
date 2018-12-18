@@ -153,3 +153,5 @@
 
 [push]
     default = simple
+[merge]
+    defaultToUpstream = true # For git versions before 2.0
