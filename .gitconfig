@@ -26,6 +26,7 @@
     bd      = branch -d
     bdd     = branch -D
     bm      = branch -vv --list --merged @
+    bmv     = branch -m
     bdm     = "!git branch --merged | egrep -v '[*]|trunk|dev|develop|integration|staging|production|master|feature' | xargs -n 1 git branch -d"
     bunup   = branch --unset-upstream
 
