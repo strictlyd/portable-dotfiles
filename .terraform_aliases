@@ -3,6 +3,7 @@ alias tf='terraform'
 alias tfi='terraform init'
 alias tfim='terraform import'
 alias tfp='terraform plan'
+alias tfpo='terraform plan -out terraform.plan'
 alias tfa='terraform apply'
 alias tfs='terraform state'
 
