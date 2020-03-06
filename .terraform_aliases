@@ -7,4 +7,5 @@ alias tfpo='terraform plan -out terraform.plan'
 alias tfa='terraform apply'
 alias tfap='terraform apply terraform.plan; rm terraform.plan'
 alias tfs='terraform state'
-
+alias tfsp='terraform state pull > terraform.tfstate'
+alias tfss='terraform state show'
