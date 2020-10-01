@@ -47,4 +47,7 @@ dla() {
 }
 
 # Bash into running container
-dbash() { docker exec --it -rm $(docker ps -aqf "name=$1") bash -il; }
+dbash() { docker exec -it -rm $(docker ps -aqf "name=$1") bash -il; }
+
+# Force remove image
+alias drmif="docker rmi -f"
