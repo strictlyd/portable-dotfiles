@@ -10,11 +10,15 @@
     #add
     a       = add
     aa      = add .
+    af      = add -f    # force add a file
     ap      = add -p
     au      = add -u    # stage modified and deleted files in entire tree
 
     #aliases
     la      = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t = \\2/'    #list all git alises
+
+    #apply mailbox
+    scp     = am --show-current-patch
 
     #blame
     bl      = blame
@@ -108,11 +112,19 @@
     prune   = remote prune origin
     ra      = remote add
     rao     = remote add origin
+    rem     = remote
     rp      = remote prune
     rpo     = remote prune origin
 
+    #remove
+    rmr     = rm -r
+
     #reset
     setto   = reset --hard
+
+    #rev-parse
+    rev     = rev-parse HEAD
+    revcp   = "!git rev-parse HEAD | pbcopy"
 
     #revert
     rv      = revert
@@ -140,6 +152,7 @@
     ss2     = stash show -p stash@{2}
 
     #submodule
+    suba    = submodule add
     subi    = submodule update --init --recursive
     subu    = submodule update
     subs    = submodule sync
